@@ -1,0 +1,38 @@
+ Button Entrar, Cadastrar;
+    EditText Login, Senha, Nome, Email, Telefone;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        Cadastrar=(Button)findViewById(R.layout.cadastraruser);
+        Cadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.cadastraruser);
+                Nome=(EditText)findViewById(R.id.edNome);
+                Email=(EditText)findViewById(R.id.edemail);
+                Telefone=(EditText)findViewById(R.id.edtel);
+                
+            }
+        });
+
+        Entrar=(Button)findViewById(R.layout.entrar);
+        Entrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.entrar);
+                
+                Login=(EditText)findViewById(R.id.edLogin);
+                Senha=(EditText)findViewById(R.id.edSenha);
+                
+                
+            }
+         
+         
+        });
+
+
+    }
+}
